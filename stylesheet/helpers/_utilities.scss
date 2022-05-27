@@ -418,7 +418,14 @@ $utilities: map-merge(( // scss-docs-start utils-vertical-align
                 class: null,
                 values: (visible: visible,
                     invisible: hidden,
-                )) // scss-docs-end utils-visibility
-        ),
+                )), // scss-docs-end utils-visibility
+
+            //custom
+            "object-fit": (property: object-fit,
+                class:"object-fit",
+                values:cover),
+            "bg-attachment": (property: background-attachment,
+                class:"bg-attachment",
+                values:fixed)),
         $utilities
 );
