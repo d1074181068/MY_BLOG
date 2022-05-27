@@ -9035,6 +9035,15 @@ fieldset:disabled .btn {
   visibility: hidden !important;
 }
 
+.object-fit-cover {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.bg-attachment-fixed {
+  background-attachment: fixed !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -11971,5 +11980,44 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
+}
+
+.deco_box {
+  width: 240px;
+  height: 240px;
+  background-color: #6c757d;
+}
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-dark-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+
+.bg-blue-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(194, 223, 255, 0.8)), to(rgba(194, 223, 255, 0)));
+  background-image: linear-gradient(180deg, rgba(194, 223, 255, 0.8), rgba(194, 223, 255, 0));
+}
+
+.banner {
+  top: 40px;
+  bottom: 40px;
+  right: 40px;
+  left: 40px;
+  background-image: url("https://images.unsplash.com/photo-1508455858334-95337ba25607?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176");
+}
+
+.banner .banner_txt {
+  top: 10%;
+  left: 5%;
+}
+
+.tw3-style {
+  bottom: 18%;
 }
 /*# sourceMappingURL=all.css.map */
