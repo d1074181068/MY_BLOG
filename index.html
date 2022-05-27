@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <style>
+        .bg-cover {
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .background-attachment-fixed {
+            background-attachment: fixed;
+        }
+
+        .obj-fit-cover {
+            object-fit: cover;
+        }
+
+        .bg-dark-gradient {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+        }
+
+        .bg-green-gradient {
+            background-image: linear-gradient(180deg, rgba(194, 223, 255, 0.8), rgba(194, 223, 255, 0));
+        }
+
+        .deco_box {
+            width: 240px;
+            height: 240px;
+            background-color: var(--bs-secondary);
+        }
+
+        .banner {
+            top: 40px;
+            bottom: 40px;
+            right: 40px;
+            left: 40px;
+            background-image: url('https://images.unsplash.com/photo-1508455858334-95337ba25607?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176');
+        }
+
+        .banner_txt {
+            top: 10%;
+            left: 5%;
+        }
+
+        .tw3-style {
+            bottom: 18%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="min-vh-100 position-relative mb-5">
+        <div class="deco_box position-absolute top-0 end-0"></div>
+        <div class="deco_box position-absolute bottom-0 start-0"></div>
+        <div class="banner bg-cover position-absolute background-attachment-fixed">
+            <div class="banner_txt text-white position-absolute">
+                <h1 class="display-3 mb-3">Xiang's Blog</h1>
+                <h2 class="mb-3">歡迎來到我的部落格 !</h2>
+                <p class="lead"> 這裡主要記錄著我的各種資訊與我的寵物:班仔與Map</p>
+            </div>
+        </div>
+    </header>
+    <div class="container p-3 mb-5">
+        <div class="row mb-5 flex-column-reverse flex-lg-row justify-content-center align-items-center">
+            <div class="col-8 col-lg-5 ">
+                <h2>關於我與前端相遇的故事 : </h2>
+                <hr>
+                <p class="p-2">
+                    Hi !
+                    EveryBody，我是個大學剛畢業的新鮮人也是個熱愛探索的人，目前在前端領域摸索中，在大學四年級做專題時偶然接觸到切版，進而開啟了我前端生涯的起點，在剛起步時常碰壁，但這並不會澆熄我網頁的熱情，嘗試去解決各種討厭的BUG無意中讓我獲得了無數的成就感
+                    !
+                </p>
+            </div>
+            <div class="intro_img col-8 col-lg-4 mb-3">
+                <img class="w-100 obj-fit-cover rounded-2" src="./images/my_photo.jpg" height="500" alt="個人照">
+            </div>
+        </div>
+        <div class="col-9 mx-auto ">
+            <div class="row align-items-center flex-lg-row flex-column mb-3 mb-lg-0">
+                <div class="col col-lg-3">
+                    <img class="w-100 obj-fit-cover rounded-2 mb-3 mb-lg-0" src="./images/banner2.jpg" height="300"
+                        alt="班仔圖">
+                </div>
+                <div class="col col-lg-7">
+                    <h2>我的第一隻寵物 : 最靓的班仔</h2>
+                    <hr>
+                    <p class="p-2">
+                        在我國中時期，水族館老闆送了我一隻小小的烏龜，於是就開啟了我養龜之路 ...
+                        跟大家科普一下這隻是屬於我們台灣本土種的斑龜，性格非常溫順可以常常摸他，時不時還會靠過來要抓癢XD，而且還是越獄高手...常常看到他爬出缸外散步哈哈
+                    </p>
+                </div>
+
+            </div>
+            <div class="row align-items-center flex-column  flex-lg-row-reverse ">
+                <div class="col col-lg-3">
+                    <img class="w-100 obj-fit-cover rounded-2 mb-3 mb-lg-0" src="./images/banner.jpg" height="300"
+                        alt="Map圖">
+                </div>
+                <div class="col col-lg-7">
+                    <h2>我的第二隻寵物 : 最搞怪的Map</h2>
+                    <hr>
+                    <p class="p-2">
+                        先跟大家說說他名字的由來，這隻是地圖龜所以..對!，非常的草率哈哈，是來自於美國的ABC喔，比較不喜歡與人親近，是個不折不扣的神經質 ~
+                        在2019年的時候從水族館帶回來飼養的，目前與班仔住在一起，提醒一下大家烏龜混養是有風險的喔 ! 要經過觀察後才能一起養
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-5 mx-lg-5 ">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bolder fst-italic">我的作品集 : </h2>
+            <div class="row row-cols-1 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card text-white h-100 border-5 border-info">
+                        <img src="./images/work-chattalker.svg" class="card-img obj-fit-cover h-100" alt="作品圖">
+                        <div class="card-img-overlay top-auto bg-dark-gradient">
+                            <h5 class="card-title fw-bolder text-dark fst-italic">chatTalker</h5>
+                            <p class="card-text">純 CSS 手刻 RWD 版型</p>
+                            <a target="_blank" href="https://d1074181068.github.io/hexschool-mission2/html/index.html"
+                                class="btn btn-outline-light w-100 stretched-link">看作品</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-white h-100 border-5 border-info">
+                        <img src="./images/work-price.PNG" class="card-img obj-fit-cover h-100" alt="作品圖">
+                        <div class="card-img-overlay fw-bolder top-auto bg-dark-gradient">
+                            <h5 class="card-title text-dark fst-italic">農產品比價網</h5>
+                            <p class="card-text">利用六角學院提供的API，用js做串接，做出比價功能，一樣具有RWD</p>
+                            <a target="_blank" href="https://d1074181068.github.io/price-parity/index.html"
+                                class="btn btn-outline-light w-100 stretched-link">看作品</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-white h-100 border-5 border-info">
+                        <img src="./images/work-rest.png" class="card-img obj-fit-cover h-100" alt="作品圖">
+                        <div class="card-img-overlay top-auto bg-dark-gradient">
+                            <h5 class="card-title fst-italic">Hexschool Restaurant</h5>
+                            <p class="card-text">RWD 版型 搭配 jQuery 做動畫效果</p>
+                            <a target="_blank" href="https://d1074181068.github.io/rwd-final/html/index.html"
+                                class="btn btn-outline-light w-100 stretched-link">看作品</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-5 mx-lg-5 my-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bolder fst-italic">班仔 & Map 照片集 : </h2>
+            <div class="row row-cols-1 row-cols-lg-2 g-5">
+                <div class="col">
+                    <div id="ban-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#ban-carousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#ban-carousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#ban-carousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#ban-carousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#ban-carousel" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active " data-bs-interval="2000">
+                                <img src="./images/tw1.jpg" class="d-block w-100 obj-fit-cover" height="500" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>第一次親手幫他手做飼養環境</h3>
+                                    <p class="h5">看起來趴的挺舒服的呢 !</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item " data-bs-interval="2000">
+                                <img src="./images/tw2.jpg" class="d-block w-100 obj-fit-cover" height="500" alt="...">
+                                <div class="carousel-caption d-none d-md-block top-0">
+                                    <h3>天生的藝人氣息</h3>
+                                    <p class="h5">幫他拍照時候都會找到鏡頭，太勾錐啦 XD</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item " data-bs-interval="2000">
+                                <img src="./images/tw3.jpg" class="d-block w-100 obj-fit-cover" height="500" alt="...">
+                                <div class="tw3-style carousel-caption d-none d-md-block text-danger fw-bolder ">
+                                    <h3>上輩子根本蜘蛛人吧 !</h3>
+                                    <p class="h5">時不時地都在想著怎麼越獄，這次被我逮個正著 !</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item " data-bs-interval="2000">
+                                <img src="./images/tw4.jpg" class="d-block w-100 obj-fit-cover" height="500" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>夏日慵懶風</h3>
+                                    <p class="h5">無憂無慮地趴在這，思考龜生</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item " data-bs-interval="2000">
+                                <img src="./images/tw5.jpg" class="d-block w-100 obj-fit-cover" height="500" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>常常被搭順風車</h3>
+                                    <p class="h5">這裡就看的出來班仔就是主要被欺負的那個哈哈</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#ban-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#ban-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="map-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#map-carousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#map-carousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#map-carousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#map-carousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#map-carousel" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active " data-bs-interval="2000">
+                                <img src="./images/map1.jpg" class="d-block w-100 obj-fit-cover" height="500" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>第一天來到我家的時候</h3>
+                                    <p class="h5">幾乎都縮在角落，好不容易拍到一張</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item " data-bs-interval="2000">
+                                <img src="./images/map2.jpg" class="d-block w-100 obj-fit-cover" height="500" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>過沒幾天 ... </h3>
+                                    <p class="h5">直接不怕生了XD</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item " data-bs-interval="2000">
+                                <img src="./images/map3.jpg" class="d-block w-100 obj-fit-cover" height="500" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>喜歡高難度動作 : 一</h3>
+                                    <p class="h5">明明旁邊有階梯卻不爬，硬要從旁邊</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item " data-bs-interval="2000">
+                                <img src="./images/map5.jpg" class="d-block w-100 obj-fit-cover" height="500" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>喜歡高難度動作 : 一</h3>
+                                    <p class="h5">一天一抬腿，龜界我最美 !!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item " data-bs-interval="2000">
+                                <img src="./images/map4.jpg" class="d-block w-100 obj-fit-cover" height="500" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>一樣也會找鏡頭 XD</h3>
+                                    <p class="h5">看來兩隻都有當藝人的天賦阿</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#map-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#map-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="p-lg-5 py-2 px-1 bg-green-gradient">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bolder fst-italic">關於我 : </h2>
+            <div class="row flex-column flex-lg-row justify-content-center align-items-center ">
+                <div class="col-12 col-md-5 ">
+                    <div class="personal-photo d-lg-flex align-items-center mb-4  ">
+                        <img class="rounded-circle mb-3 mb-lg-0 " src="./images/my_photo.jpg" alt="小頭像"
+                            style="width: 100px; height:100px">
+                        <h3 class="ms-lg-4 fst-italic">許祐翔 <br>(You Xiang Xu)</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="personal_info">
+                        <h4>聯絡方式 : </h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="bi bi-envelope fst-normal px-1"> : </i>
+                                <a class="text-decoration-none"
+                                    href="mailto:wiwi19991214@gmail.com">wiwi19991214@gmail.com</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-phone fst-normal px-1"> : </i>
+                                <a class="text-decoration-none" href="tel:0965016702">+886-965-106-702</a>
+                            </li>
+                        </ul>
+                        <h4>我的社群 : </h4>
+                        <ul class="list-unstyled d-flex  mb-3 mb-lg-0 ">
+                            <li class="me-3">
+                                <a class="h1" target="_blank"
+                                    href="https://www.facebook.com/profile.php?id=100006967029671">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="me-3">
+                                <a class="h1" target="_blank" style="color: rgb(0,195,0);"
+                                    href="https://line.me/ti/p/vrSkSFzfp7">
+                                    <i class="bi bi-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="h1" target="_blank" style="color: rgb(0,0,0);"
+                                    href="https://github.com/d1074181068">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
